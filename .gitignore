@@ -1,0 +1,8 @@
+
+.DS_Store
+/.idea
+/Eventio/.idea
+/Eventio/src/API/Eventio.Api/bin
+/Eventio/src/API/Eventio.Api/obj
+/Eventio/src/Modules/Events/Eventio.Modules.Events.Api/bin
+/Eventio/src/Modules/Events/Eventio.Modules.Events.Api/obj

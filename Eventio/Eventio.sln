@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4184752-78D7-4029-BB2B-1117F5C2B564}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93FDD6BE-4352-4510-AF10-94EF37791A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{7B75059C-76B3-45F0-98A4-0346A30F5CC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{0460F73A-19A3-47EC-9406-9F07F70AB499}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{13CB2EFB-9B58-4B74-9452-56278A7520AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventio.Api", "src\API\Eventio.Api\Eventio.Api.csproj", "{44A704A7-DC2F-421A-A47A-E682D544BE5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventio.Modules.Events.Api", "src\Modules\Events\Eventio.Modules.Events.Api\Eventio.Modules.Events.Api.csproj", "{B94F3BC8-E0A1-48DB-8AE6-D9ACDA02ACF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44A704A7-DC2F-421A-A47A-E682D544BE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A704A7-DC2F-421A-A47A-E682D544BE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A704A7-DC2F-421A-A47A-E682D544BE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A704A7-DC2F-421A-A47A-E682D544BE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94F3BC8-E0A1-48DB-8AE6-D9ACDA02ACF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94F3BC8-E0A1-48DB-8AE6-D9ACDA02ACF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94F3BC8-E0A1-48DB-8AE6-D9ACDA02ACF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94F3BC8-E0A1-48DB-8AE6-D9ACDA02ACF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B75059C-76B3-45F0-98A4-0346A30F5CC1} = {93FDD6BE-4352-4510-AF10-94EF37791A88}
+		{0460F73A-19A3-47EC-9406-9F07F70AB499} = {93FDD6BE-4352-4510-AF10-94EF37791A88}
+		{13CB2EFB-9B58-4B74-9452-56278A7520AB} = {0460F73A-19A3-47EC-9406-9F07F70AB499}
+		{44A704A7-DC2F-421A-A47A-E682D544BE5D} = {7B75059C-76B3-45F0-98A4-0346A30F5CC1}
+		{B94F3BC8-E0A1-48DB-8AE6-D9ACDA02ACF3} = {13CB2EFB-9B58-4B74-9452-56278A7520AB}
+	EndGlobalSection
+EndGlobal
