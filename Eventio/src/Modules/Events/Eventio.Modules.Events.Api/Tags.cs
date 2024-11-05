@@ -1,4 +1,4 @@
-namespace Eventio.Modules.Events.Api.Events;
+namespace Eventio.Modules.Events.Api;
 
 internal static class Tags
 {
