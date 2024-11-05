@@ -1,0 +1,24 @@
+﻿version: '3.9'
+
+services:
+  eventio.api:
+    image: ${DOCKER_REGISTRY-}eventioapi
+    container_name: Eventio.Api
+    build:
+      context: .
+      dockerfile: src/API/Eventio.Api/Dockerfile
+    ports:
+      - 5000:8080
+      - 5001:8081
+
+  eventio.database:
+    image: postgres:latest
+    container_name: Eventio.Database
+    environment:
+      - POSTGRES_DB=eventio
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./.containers/db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
