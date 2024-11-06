@@ -1,3 +1,4 @@
+using Eventio.Api.Extensions;
 using Eventio.Modules.Events.Api;
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    
+    app.ApplyMigrations();
 }
 
 EventsModule.MapEndpoints(app);
