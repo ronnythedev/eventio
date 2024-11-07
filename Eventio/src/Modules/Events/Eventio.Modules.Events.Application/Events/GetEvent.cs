@@ -1,9 +1,7 @@
-using Eventio.Modules.Events.Api.Database;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.EntityFrameworkCore;
-namespace Eventio.Modules.Events.Api.Events;
+using MediatR;
+namespace Eventio.Modules.Events.Application.Events;
+
+public sealed class GetEventQuery(Guid EventId) : IRequest<EventResponse?>;
 
 public static class GetEvent
 {

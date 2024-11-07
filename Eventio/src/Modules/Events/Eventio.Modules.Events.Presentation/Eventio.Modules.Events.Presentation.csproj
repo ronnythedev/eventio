@@ -1,5 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    
+    <ItemGroup>
       <ProjectReference Include="..\Eventio.Modules.Events.Application\Eventio.Modules.Events.Application.csproj" />
     </ItemGroup>
 </Project>

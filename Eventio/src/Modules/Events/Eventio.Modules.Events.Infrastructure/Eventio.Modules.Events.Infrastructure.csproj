@@ -1,5 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
+        <PackageReference Include="EFCore.NamingConventions" Version="8.0.3" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.10" />
+    </ItemGroup>
+    <ItemGroup>
       <ProjectReference Include="..\Eventio.Modules.Events.Application\Eventio.Modules.Events.Application.csproj" />
       <ProjectReference Include="..\Eventio.Modules.Events.Presentation\Eventio.Modules.Events.Presentation.csproj" />
     </ItemGroup>

@@ -1,4 +1,4 @@
-namespace Eventio.Modules.Events.Api.Events;
+namespace Eventio.Modules.Events.Domain.Events;
 
 public sealed class Event
 {

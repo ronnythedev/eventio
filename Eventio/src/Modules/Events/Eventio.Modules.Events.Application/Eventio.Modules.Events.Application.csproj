@@ -2,4 +2,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Eventio.Modules.Events.Domain\Eventio.Modules.Events.Domain.csproj" />
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.4.1" />
+    </ItemGroup>
 </Project>

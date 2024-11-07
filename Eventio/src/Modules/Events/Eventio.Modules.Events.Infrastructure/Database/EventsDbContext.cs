@@ -1,6 +1,6 @@
-using Eventio.Modules.Events.Api.Events;
+using Eventio.Modules.Events.Domain.Events;
 using Microsoft.EntityFrameworkCore;
-namespace Eventio.Modules.Events.Api.Database;
+namespace Eventio.Modules.Events.Infrastructure.Database;
 
 public sealed class EventsDbContext(DbContextOptions<EventsDbContext> options):DbContext(options)
 {
