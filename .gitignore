@@ -8,3 +8,7 @@
 /Eventio/src/Modules/Events/Eventio.Modules.Events.Api/obj
 /Eventio/.vs
 /Eventio/.containers
+/Eventio/src/Modules/Events/Eventio.Modules.Events.Application/obj
+/Eventio/src/Modules/Events/Eventio.Modules.Events.Domain/obj
+/Eventio/src/Modules/Events/Eventio.Modules.Events.Infrastructure/obj
+/Eventio/src/Modules/Events/Eventio.Modules.Events.Presentation/obj

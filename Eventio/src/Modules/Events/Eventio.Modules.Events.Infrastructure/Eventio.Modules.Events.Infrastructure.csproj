@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+      <ProjectReference Include="..\Eventio.Modules.Events.Application\Eventio.Modules.Events.Application.csproj" />
+      <ProjectReference Include="..\Eventio.Modules.Events.Presentation\Eventio.Modules.Events.Presentation.csproj" />
+    </ItemGroup>
+</Project>
