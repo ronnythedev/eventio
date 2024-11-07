@@ -1,4 +1,7 @@
+using Eventio.Modules.Events.Application.Abstractions.Data;
+using Eventio.Modules.Events.Domain.Events;
 using Eventio.Modules.Events.Infrastructure.Database;
+using Eventio.Modules.Events.Infrastructure.Events;
 using Eventio.Modules.Events.Presentation.Events;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +34,10 @@ public static class EventsModule
                         .MigrationsHistoryTable(HistoryRepository.DefaultTableName, Schemas.Events))
                 .UseSnakeCaseNamingConvention());
 
+        services.AddScoped<IEventRepository, EventRepository>();
+
+        services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<EventsDbContext>());
+        
         return services;
     }
 }
