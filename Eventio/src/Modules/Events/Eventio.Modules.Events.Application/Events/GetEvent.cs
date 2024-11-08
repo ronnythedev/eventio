@@ -3,6 +3,13 @@ namespace Eventio.Modules.Events.Application.Events;
 
 public sealed class GetEventQuery(Guid EventId) : IRequest<EventResponse?>;
 
+internal sealed class GetEventQueryHandler() : IRequestHandler<GetEventQuery, EventResponse?>
+{
+    public async Task<EventResponse?> Handle(GetEventQuery request, CancellationToken cancellationToken)
+    {
+        
+    }
+}
 public static class GetEvent
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
